@@ -64,14 +64,14 @@ var resolver = {
 };
 
 var strings = [
-  "Laddar...",
-  "Fenix Roleplay",
-  "Laddar...",
-  "discord.gg/7ZqT5XU",
-  "Laddar...",
-  "Fenix Roleplay",
-  "Laddar...",
-  "discord.gg/7ZqT5XU",
+  "Loading...",
+  "Peace Land",
+  "Loading...",
+  "Peace Land",
+  "Loading...",
+  "Peace Land",
+  "Loading...",
+  "Peace Land",
 ];
 
 var counter = 0;
