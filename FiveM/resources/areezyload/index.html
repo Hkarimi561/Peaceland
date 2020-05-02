@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fenix Roleplay</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Unica+One'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="heading" data-target-resolver></h1>
+  </div>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <script src="js/index.js"></script>
+
+  <h1 class="enable_music"><strong></strong></h1>
+
+  <audio id="leson" src="music/music-1.ogg" autoplay="true" hidden="true" loop="true"/>
+  <script>
+
+  var play = false;
+  var myAudio = document.getElementById("leson");
+  
+  myAudio.volume = 0.07;
+
+  function onKeyDown(event) {
+          switch (event.keyCode) {
+              case 32: //SpaceBar                    
+                  if (play) {
+                      myAudio.pause();
+                      play = false;
+                  } else {
+                      myAudio.play();
+                      play = true;
+                  }
+                  break;
+          }
+    return false;
+  }
+
+  window.addEventListener("keydown", onKeyDown, false);
+  </script>
+
+<svg width="200" height="200" viewBox="0 0 100 100">
+  <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+  <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+  <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+  <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+</svg>
+
+</body>
+</html>
